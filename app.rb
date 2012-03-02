@@ -28,3 +28,9 @@ get '/search/label/:label' do |label|
   redirect "#{ROOT}/blog/categories/#{category}/", 301
 end
 
+
+
+# blog.ApproachE.com -> ApproachE.com/blog
+get '/' do
+  redirect "#{ROOT}/blog/", 301
+end
