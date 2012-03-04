@@ -34,3 +34,10 @@ end
 get '/' do
   redirect "#{ROOT}/blog/", 301
 end
+
+
+# Feeds
+# blog.approache.com/feeds/posts/default => FeedBurner
+get '/feeds/posts/default' do
+  redirect "http://feeds.feedburner.com/DmitriyNagirnyak", 301
+end
