@@ -30,6 +30,18 @@ end
 
 
 
+
+
+# http://blog.approache.com/2011_12_01_archive.html
+# =>
+# http://approache.com/blog/archives/
+get '/:year_:month_:day_archive.html' do
+  redirect "#{ROOT}/blog/archives/", 301
+end
+
+
+
+
 # blog.ApproachE.com -> ApproachE.com/blog
 get '/' do
   redirect "#{ROOT}/blog/", 301
